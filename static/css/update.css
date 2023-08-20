@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+nav{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Wix Madefor Text', sans-serif;
+
+}
+#page-title{
+    margin-left: 200px;
+}
+.nav-ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 550px;
+}
+li{
+    padding: 10px 30px;
+}
+img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    background-color: #1d2024;
+    opacity: 0.5;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.heading{
+    color: #000624;
+    text-align: center;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading h1{
+    font-family: "Open Sans", Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    margin: 0;
+}
+.heading p{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+
+.f-container{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    display: block;
+    width: 50%;
+    margin: 50px auto 70px;
+}
+form label{
+    margin-left: 20px;
+}
+input{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 700px;
+    height: 15px;
+    display: block;
+    margin:  15px auto;
+    border: 1px solid #bcbcbc;
+    padding: 15px;
+    border-radius: 5px;
+    color: #000624;
+}
+input[type=text]:focus{
+    outline: none;
+    border: 3px solid rgba(3, 80, 157, 0.552);
+}
+textarea{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    border: 1px solid #bcbcbc;
+    width: 700px;
+    height: 70px;
+    display: block;
+    margin:  10px auto;
+    padding: 15px;
+    border-radius: 5px;
+}
+textarea:focus{
+    outline: none;
+    border: 3px solid rgba(3, 80, 157, 0.552);
+}
+button{
+    border: none;
+    height: 50px;
+    width: 180px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0085a1;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 16PX;
+}
+button:hover{
+    box-shadow: 5px 5px black;
+}
+
+
+
+
+
+hr{
+    width: 70%;
+}
+
+
+/* Footer */
+li h1{
+    font-size: 20px;
+}
+.footer-ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-ul li:hover{
+    color: #0d6efd;
+    cursor: pointer;
+}
+footer p{
+    margin-left: 40px;
+    text-align: center;
+}

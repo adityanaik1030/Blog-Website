@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+}
+.main-container{
+    display: flex;
+    margin-top: 40px;
+}
+.left-container{
+    width: 50%;
+    font-size: 3rem;
+    color: #6d56b3;
+
+}
+.left-container h1{
+    margin-left: 45px;
+}
+.right-container{
+    width: 50%;
+}
+img{
+    width: 100%;
+}
+
+
+.btns{
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+input{
+    width: 180px;
+    padding: 15px;
+    margin: 50px;
+    background-color: #b197fc;
+    color: white;
+    border: 1px soild black;
+    border-radius: 20px;
+    font-size: 16px;
+}
+input:hover{
+    box-shadow: 3px 3px black;
+
+}

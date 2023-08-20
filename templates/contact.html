@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Website</title>
+    <!-- Google Fonts    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/faffa3f8b1.js" crossorigin="anonymous"></script>
+    <!--    Stylesheet-->
+    <link rel="stylesheet" href="static/css/contact.css">
+</head>
+<body>
+    <nav>
+        <h1 id="page-title">Exuberant Diaries</h1>
+        <ul class="nav-ul">
+            <li><a href="{{ url_for('home') }}">HOME</a></li>
+            <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+            <li>CONTACT</li>
+
+        </ul>
+    </nav>
+    <div class="page-img">
+        <img src="static/img/contact-bg.jpg" alt="">
+    </div>
+    <div class="heading">
+        <h1>Contact Me</h1>
+        <p>Have questions? I have answers.</p>
+    </div>
+
+    <p class="para">Want to get in touch? Fill out the form below to send me a message and I will get back to you as
+        soon as possible!
+    </p>
+    <div class="form-container">
+        <form action="mailto:leoadi1030@gmail.com?subject=People want to contact you!" method="post" enctype="text/plain">
+            <input type="text" name="name" required placeholder="Name">
+            <input type="email" name="email" required placeholder="Email">
+            <input type="tel" name="phone" pattern="[0-9]{10}" required placeholder="Phone Number">
+            <textarea name="message" cols="54" rows="10" required placeholder="Message"></textarea>
+            <input type="submit">
+        </form>
+    </div>
+    <hr>
+
+
+    <footer>
+        <ul class="footer-ul">
+            <li><h1><i class="fa-brands fa-twitter fa-2xl"></i></h1></li>
+            <li><h1><i class="fa-brands fa-facebook fa-2xl"></i></h1></li>
+            <li><h1><i class="fa-brands fa-github fa-2xl"></i></h1></li>
+        </ul>
+        <p>Copyright © Team2 2023</p>
+    </footer>
+</body>
+</html>

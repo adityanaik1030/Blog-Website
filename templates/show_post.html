@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Website</title>
+    <!-- Google Fonts    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@500&display=swap" rel="stylesheet">
+    <!--    Stylesheet-->
+    <link rel="stylesheet" href="static/css/show_post.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/faffa3f8b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <h1 id="page-title">Exuberant Diaries</h1>
+        <ul class="nav-ul">
+            <li><a href="{{ url_for('home') }}">HOME</a></li>
+            <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+            <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="page-img">
+        <img src="static/img/post.jpg" alt="">
+    </div>
+
+    <div class="heading">
+        <h1 class="title">{{ post.title }}</h1>
+        <p class="subtitle">{{ post.subtitle }}</p>
+        <p class="author">Posted by Team-03 on {{ post.date }}.</p>
+    </div>
+    <div class="body">
+        <p>{{ post.body }}</p>
+<!--        <hr>-->
+    </div>
+    {% if is_logged_in %}
+    <div class="btns">
+        <a href="{{ url_for('update_post', post_id=post.id, is_logged_in=is_logged_in) }}"><button class="update-btn">Update</button></a>
+        <a href="{{ url_for('delete_post', post_id=post.id) }}"><button class="delete-btn">Delete</button></a>
+    </div>
+    {% endif %}
+    <hr>
+
+
+    <footer>
+        <ul class="footer-ul">
+            <li><h1><i class="fa-brands fa-twitter fa-2xl"></i></h1></li>
+            <li><h1><i class="fa-brands fa-facebook fa-2xl"></i></h1></li>
+            <li><h1><i class="fa-brands fa-github fa-2xl"></i></h1></li>
+        </ul>
+        <p>Copyright © Team2 2023</p>
+    </footer>
+</body>
+</html>

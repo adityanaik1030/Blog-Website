@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+}
+nav{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+#page-title{
+    margin-left: 200px;
+}
+.nav-ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 510px;
+}
+li{
+    padding: 10px 30px;
+}
+.heading a, nav a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-color: #1d2024;
+    opacity: 0.5;
+}
+.heading{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000624;
+}
+.heading h1{
+    font-family: "Open Sans", Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    margin: 0;
+}
+.heading p{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.btn{
+    font-family: 'Wix Madefor Text', sans-serif;
+    display: block;
+    background-color: #0085a1;
+    width: 200px;
+    margin: 40px auto 10px;
+    padding: 14px 12px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px black;
+}
+
+
+
+.posts{
+    display: block;
+    width: 50%;
+    margin: 4px auto 0;
+    padding: 10px;
+    font-family: "Open Sans", Geneva, Tahoma, sans-serif;
+}
+.posts-anchor{
+    text-decoration: none;
+}
+.posts-anchor:hover .title,
+.posts-anchor:hover .subtitle{
+    color: #0085a1;
+}
+.title{
+    color: #212529;
+    /* color: #373f45; */
+    font-size: 36px;
+    font-weight: 900;
+}
+.subtitle{
+    color: #4e5256;
+    font-size: 28px;
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+.author{
+    color: #868e96;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+}
+.posts hr{
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+
+
+
+
+
+
+/* Footer */
+li h1{
+    font-size: 20px;
+}
+.footer-ul{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footer-ul li:hover{
+    cursor: pointer;
+    color: #0085a1;
+}
+footer p{
+    margin-left: 40px;
+    text-align: center;
+}

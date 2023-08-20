@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+nav{
+    font-family: 'Wix Madefor Text', sans-serif;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+#page-title{
+    margin-left: 200px;
+}
+.nav-ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 550px;
+}
+li{
+    padding: 10px 30px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-color: #1d2024;
+    opacity: 0.5;
+}
+.heading{
+    width: 40%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000624;
+}
+.title{
+    font-family: "Open Sans", Geneva, Tahoma, sans-serif;
+    font-size: 3.5rem;
+    margin: 0;
+}
+.subtitle{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.author{
+    color: black;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+}
+.body{
+    display: block;
+    width: 50%;
+    margin: 50px auto;
+}
+.body p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+hr{
+    width: 70%;
+    margin-top: 50px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.btns{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: flex-start;
+}
+.btns button{
+    font-weight: 600;
+    width: 170px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 20px;
+    background-color: #0085a1;
+    color: whitesmoke;
+    border: none;
+}
+.btns button:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px black;
+}
+.delete-btn{
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+li h1{
+    font-size: 20px;
+}
+.footer-ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footer-ul li:hover{
+    cursor: pointer;
+    color: #0085a1;
+}
+footer p{
+    margin-left: 40px;
+    text-align: center;
+}
