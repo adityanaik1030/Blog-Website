@@ -10,10 +10,9 @@ admin_logged_in = False
 app = Flask(__name__)
 
 # Create Database
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://exuberant_diaries_user:3WnU9mIxQX7gx7DLikvF2fEYoFYnRCa3@dpg-cj9q03pduelc73d663fg-a.singapore-postgres.render.com/exuberant_diaries"
-
+# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://exuberant_diaries_user:3WnU9mIxQX7gx7DLikvF2fEYoFYnRCa3@dpg-cj9q03pduelc73d663fg-a.singapore-postgres.render.com/exuberant_diaries"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://personl_blog10_user:KiUnf7kcKK7jvmyPb7CgsNBrMLahduKv@dpg-cn6qqr8l6cac73bpolu0-a/personl_blog10"
 # postgres://exuberant_diaries_user:3WnU9mIxQX7gx7DLikvF2fEYoFYnRCa3@dpg-cj9q03pduelc73d663fg-a.singapore-postgres.render.com/exuberant_diaries
-#
 
 # Create the extension
 db = SQLAlchemy()
